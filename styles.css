@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Quicksand", sans-serif;
+}
+
+:root {
+	--background: linear-gradient(45deg, rgb(255, 0, 0), rgb(0, 0, 255));
+	--board: rgb(14, 73, 125);
+	--green: green;
+	--lightyellow: rgb(163, 163, 29);
+	--yellow: rgb(255, 255, 0);
+	--gameboard: #032d33;
+	--square: #653dca;
+	--white: #e9eef2;
+	--button: #1881fa;
+	--btnborder: #78a6c8;
+	--apple: red;
+}
+
+body {
+	background: var(--background);
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.main-board {
+	border: solid 4px var(--green);
+	border-radius: 8px;
+}
+
+.score-board {
+	background-color: var(--board);
+	display: flex;
+	justify-content: space-around;
+}
+
+.score {
+	padding: 8px 0;
+	font-weight: 500;
+	font-size: 20px;
+	color: var(--lightyellow);
+}
+
+.game-board {
+	width: 400px;
+	height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	background: var(--gameboard);
+}
+
+.game-board div {
+	width: 20px;
+	height: 20px;
+	border: solid 0.5px var(--square);
+}
+
+.buttons {
+	background-color: var(--board);
+	display: flex;
+	justify-content: center;
+}
+
+.buttons button {
+	margin: 10px 20px;
+	padding: 7px 20px;
+	font-size: 16px;
+	color: var(--white);
+	background: var(--button);
+	font-family: Trebuchet MS, sans-serif;
+	border: 1px solid var(--btnborder);
+	border-radius: 8px;
+	transition: filter 1s, transform 0.2s;
+}
+
+.buttons button:hover {
+	filter: brightness(150%);
+	cursor: pointer;
+}
+
+.buttons button:active {
+	transform: scale(0.97);
+	cursor: pointer;
+}
+
+.players {
+	background-color: var(--board);
+	padding: 10px;
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--white);
+}
+
+.player-one,
+.player-two {
+	padding: 18px 0;
+}
+
+.player-one > p,
+.player-two > p {
+	padding-bottom: 10px;
+	font-size: 18px;
+}
+
+.player-one > div,
+.player-two > div {
+	padding-bottom: 5px;
+}
+
+.label-speed-one,
+.label-speed-two,
+.label-cell-one,
+.label-cell-two {
+	display: flex;
+	align-items: center;
+}
+
+.label-speed-one > .container-speed-one,
+.label-speed-two > .container-speed-two {
+	background: var(--white);
+	height: 16px;
+	width: 200px;
+	margin-left: 30px;
+}
+
+.label-cell-one > .container-cell-one,
+.label-cell-two > .container-cell-two {
+	background: var(--white);
+	height: 16px;
+	width: 200px;
+	margin-left: 32.5px;
+}
+
+.fill-speed-one,
+.fill-cell-one,
+.fill-speed-two,
+.fill-cell-two {
+	background-color: var(--yellow);
+	height: 100%;
+}
+
+.apple {
+	background-color: var(--apple);
+	border-radius: 5px;
+}
+
+.snake {
+	background-color: var(--green);
+	border-radius: 5px;
+}
+
+.copyrights {
+	position: absolute;
+	right: 30px;
+	bottom: 20px;
+}
