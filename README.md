@@ -7,7 +7,7 @@ Wąż znajdujący się na dole siatki do gry jest przypisany do gracza numer 2 (
 Grę można zatrzymać w dowolnym momencie po wciśniecia przycisku pause, oraz wznowić po wciśnięciu przycisku resume.
 
 
-Po zebraniu jednego pkt (1 jabłko = 1pkt) prędkość węża zwiększa się o 10%. Informacje o ilości zbebranych pkt jest pokazana na górze ekranu. Prędkość oraz ilość zebranych pkt jest równiąż widoczna w formie pasku na dole ekranu odpowiednio do danego gracza
+Po zebraniu jednego pkt (1 jabłko = 1pkt) prędkość węża zwiększa się o 10%. Informacje o ilości zbebranych pkt jest pokazana na górze ekranu. Prędkość oraz ilość zebranych pkt jest również widoczna w formie pasku na dole ekranu odpowiednio do danego gracza.
 Gracz kóry zbierze jako pierwszy 25 pkt wygrywa grę.
 Zabronione jest przekroczenie siatki gry oraz wpadnięcie na siebie samego oraz przeciwnika.
 
