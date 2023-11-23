@@ -16,7 +16,7 @@ export function controlOne(e) {
             direction.snakeOne = width
             break;
     }
-}
+} 
 
 export function controlTwo(e) {
 	switch (e.key) {

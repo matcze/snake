@@ -9,6 +9,7 @@ const fillSpeedOne = document.getElementById("fill-speed-one")
 const fillCellOne = document.getElementById("fill-cell-one")
 const fillSpeedTwo = document.getElementById("fill-speed-two")
 const fillCellTwo = document.getElementById("fill-cell-two")
+const recYear = document.getElementById("rec-year")
 
 let currentIndex = 0
 
@@ -66,6 +67,7 @@ function startGame() {
 	currentSnakeTwo.forEach(index => squares[index].classList.add("snake"))
 	intervalSnakeOne = setInterval(moveOutcomesSnakeOne, intervalTimeSnakeOne)
 	intervalSnakeTwo = setInterval(moveOutcomesSnakeTwo, intervalTimeSnakeTwo)
+	startBtn.textContent = "Restart"
 }
 
 function pauseGame() {
@@ -73,9 +75,11 @@ function pauseGame() {
 	if (pause) {
 		clearInterval(intervalSnakeOne)
 		clearInterval(intervalSnakeTwo)
+		pauseBtn.textContent = "Resume"
 	} else {
 		intervalSnakeOne = setInterval(moveOutcomesSnakeOne, intervalTimeSnakeOne)
 		intervalSnakeTwo = setInterval(moveOutcomesSnakeTwo, intervalTimeSnakeTwo)
+		pauseBtn.textContent = "Pause"
 	}
 }
 
@@ -173,9 +177,6 @@ document.addEventListener("keyup", controlTwo)
 startBtn.addEventListener("click", startGame)
 pauseBtn.addEventListener("click", pauseGame)
 
+const Year = new Date().getFullYear()
+recYear.textContent = Year
 
-// What to do more:
-// you can of course move apple to another js file
-// you can fix the bug in which when you hit the button to direct snake in opposite direction that is already moving you clearinterval and stop game in this snake
-// you can do instruction - ?
-// html, css, js both files has been already check and are good enough to deploy them on page

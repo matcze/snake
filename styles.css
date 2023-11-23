@@ -20,15 +20,13 @@
 	--btnborder: #78a6c8;
 	--apple: red;
 }
-
+ 
 body {
 	background: var(--background);
-	width: 100vw;
 	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
 }
 
 .main-board {
@@ -93,8 +91,7 @@ body {
 
 .players {
 	background-color: var(--board);
-	padding: 10px;
-	font-size: 16px;
+	padding-left: 10px;
 	font-weight: 500;
 	color: var(--white);
 }
@@ -120,7 +117,6 @@ body {
 .label-cell-one,
 .label-cell-two {
 	display: flex;
-	align-items: center;
 }
 
 .label-speed-one > .container-speed-one,
@@ -161,4 +157,5 @@ body {
 	position: absolute;
 	right: 30px;
 	bottom: 20px;
+	font-size: 18px;
 }
